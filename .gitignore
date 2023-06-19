@@ -1,0 +1,2 @@
+# Buraya git tarafından takip edilmemesini istediğin dosyaları adları ve uzantıları ile yazılır.
+# Örneğin secret.txt yazarsan secret dosyası git'e yüklenmez.

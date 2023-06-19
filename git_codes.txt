@@ -1,0 +1,23 @@
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin44 URL
+git push -u origin44 main 
+
+//ödev gönderme
+git add .
+git commit -m "second commit"
+git push 
+
+//conflict durumunda 
+git reset HEAD~1 
+git add .
+git commit -m "conflict sonrası"
+git push --force 
+
+git status 
+git log 
+git checkout commitID 
+git clone URL 
+git pull 
