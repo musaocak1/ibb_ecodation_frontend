@@ -21,3 +21,32 @@ git log
 git checkout commitID 
 git clone URL 
 git pull 
+
+git stash 
+git stash save "benim_stash"
+git stash list 
+git stash pop 
+git stash drop @stash@{0}
+
+
+git branch -M main
+git branch -v
+NOT:Branch oluşturmanın veya değiştirmenin öncesinde git add , git commit , git push yapalım. 
+git branch backend
+git branch frontend
+git branch devops  
+git branch -a 
+git branch -D backend frontend (İsmi yazılı branchleri siler)
+
+
+git checkout frontend(frontend branch ine geçiş)
+NOT: Bu branch'te yaptıkların merge yapana kadar bu branch'te kalır.
+git checkout main (Ana branch'e dönmek için)
+
+NOT:Merge işlemi öncesinde main branch'e dönülmeli.
+git merge frontend --> Bu işlem frontend ve main branch'i birleştirir.
+
+16Haziran Araştırması:
+Fast Forward Merge 
+git merge frontend 
+git merge --no-ff frontend
