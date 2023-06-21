@@ -7,6 +7,9 @@ Version : v.1
 
 /*#####################################################################*/
 /* Root */
+:root {
+    --templateBgColor: rgb(43, 44, 44);
+}
 
 /*#####################################################################*/
 /* Common Property */
@@ -50,7 +53,7 @@ i {
     font-size: 1.5rem;
 }
 
-.my_clearfix::after{
+.my_clearfix::after {
     content: "";
     display: block;
     clear: both;
@@ -78,35 +81,60 @@ i {
 }
 
 /* My Line-Clamp */
-.line-clamp5{
+.line-clamp5 {
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
-    display:-webkit-box;
+    display: -webkit-box;
     overflow: hidden;
 }
 
-.line-clamp8{
+.line-clamp8 {
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
-    display:-webkit-box;
+    display: -webkit-box;
     overflow: hidden;
 }
 
-.line-clamp10{
+.line-clamp10 {
     -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
-    display:-webkit-box;
+    display: -webkit-box;
     overflow: hidden;
 }
 
 /*#####################################################################*/
+
+/* Navbar */
+.dark_mode {
+    background-color: var(--templateBgColor);
+    color: #ffffff;
+}
+
 /* Header */
-header{
-background-image: url("./img/NightOfCity.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: 50% 50%;
-z-index: -1;
-height: 80vh;
-padding-top: 4rem;
+header {
+    background-image: url("./img/NightOfCity.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+    height: 80vh;
+    padding-top: 4rem;
+}
+
+/* Footer */
+footer {
+    min-height: 10rem;
+    width: auto;
+    color: white;
+}
+
+/* Backtop */
+#back_top{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+#back_top:hover{
+    opacity: 0.8;
 }
