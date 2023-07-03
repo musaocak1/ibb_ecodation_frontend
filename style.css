@@ -9,6 +9,8 @@ Version : v.1
 /* Root */
 :root {
     --templateBgColor: rgb(43, 44, 44);
+    --padding: 0.5rem 1rem;
+    --background: #b3b1b1;
 }
 
 /*#####################################################################*/
@@ -129,12 +131,107 @@ footer {
 }
 
 /* Backtop */
-#back_top{
+#back_top {
     position: fixed;
     right: 0;
     bottom: 0;
 }
 
-#back_top:hover{
+#back_top:hover {
     opacity: 0.8;
+}
+
+
+/* Register */
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex !important;
+}
+
+
+.register-show {
+    width: 90%;
+    display: none;
+    /* Başlangıçta gizli olması için */
+    align-items: center;
+    justify-content: center;
+}
+
+.form-area {
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 4rem;
+    background: var(--background);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+.close-btn {
+    position: relative;
+    top: 0;
+    left: 2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+
+}
+
+.form-area form {
+    width: 90%;
+}
+
+.form-area form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+}
+
+.form-area form div h6 {
+    color: black;
+    font-weight: bold;
+}
+
+.form-area form div input {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: var(--padding);
+}
+
+.form-area form .form-check {
+    margin-left: -1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.form-area form .form-check input {
+    width: 20px;
+    height: 20px;
+}
+
+.form-area form button {
+    position: relative;
+    padding: var(--padding);
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+.form-area form button:active {
+    top: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
