@@ -55,18 +55,22 @@ i {
     font-size: 1.5rem;
 }
 
+p {
+    color: black !important;
+}
+
 .my_clearfix::after {
     content: "";
     display: block;
     clear: both;
 }
 
-.myHeading{
+.myHeading {
     text-align: center;
     text-decoration: underline;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    text-shadow: 0.4px -0.9px rgba(0,0 ,0 ,0.9 );
+    text-shadow: 0.4px -0.9px rgba(0, 0, 0, 0.9);
     opacity: 0.7;
 }
 
@@ -121,6 +125,7 @@ i {
     display: -webkit-box;
     overflow: hidden;
 }
+
 .line-clamp20 {
     -webkit-line-clamp: 20;
     -webkit-box-orient: vertical;
@@ -146,19 +151,24 @@ header {
     height: 80vh;
     padding-top: 4rem;
 }
+
 /* Messages */
-#messages{
-    margin-top:3rem;
-    margin-bottom:3rem;
+#messages {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-#messages i{
+#messages >.container > .row > .text-center > p{
+    color: black!important;
+}
+
+#messages i {
     color: blue;
     font-size: 5rem;
 }
 
 /* Parallax */
-#parallax{
+#parallax {
     background-color: transparent;
     background-image: url('./img/parallax.jpg');
     background-size: cover;
@@ -168,8 +178,26 @@ header {
     background-attachment: fixed;
 }
 
-#parallax h2,p{
-    color: white;
+
+#parallax>h2,
+p {
+    color: white !important;
+}
+
+/* newspaper */
+#newspaper {
+    height: 35rem;
+    padding: 2rem;
+}
+
+#newspaper p {
+    color: black !important;
+    text-align: justify;
+}
+
+/* Blog */
+#blog{
+    background-color: #b5b8ff;
 }
 
 /* Footer */
