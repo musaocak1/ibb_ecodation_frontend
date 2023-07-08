@@ -18,14 +18,14 @@ $(document).ready(function () {
 // Footer
 let newDate = () => {
     const date = new Date().getUTCFullYear();
-    //JS DOM
+    //JS DOM 
     //document.getElementById("date_id").innerHTML - new Date().getFullYear();
 
     //Jquery DOM
     $("#date_id").html(date);
 }
 newDate()
-
+armut
 const register = document.getElementById("register")
 const closebtn = document.getElementById("closeBtn")
 const form = document.getElementById("formValue")
